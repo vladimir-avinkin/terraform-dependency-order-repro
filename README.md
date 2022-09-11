@@ -7,7 +7,6 @@
 + curl
 
 ## how to reproduce a bug
-+ run the backing service:
   ```bash
   docker-compose up -d
   # make sure you wait for the service to be up before the next command
@@ -19,5 +18,5 @@
   terraform apply -var 'resource_count=1'
   ```
   
-After that you will see that terraform deletes `null_resource.null[1]` before modyfing `hashicups_order.cups` despite
+In that last apply you will see that terraform deletes `null_resource.null[1]` before modyfing `hashicups_order.cups` despite
 `hashicups_order.cups` implicit and explicit dependencies
