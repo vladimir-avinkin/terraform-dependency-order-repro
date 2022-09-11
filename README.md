@@ -1,5 +1,5 @@
 # terraform dependency order of operations bug reproduction case
-
+This reproduction case uses hashicups provider and the provided backing service from https://github.com/hashicorp/learn-terraform-hashicups-provider
 ## prerequisites
 + docker
 + docker-compose
